@@ -127,7 +127,7 @@ public class Rates {
         catch (Exception e) { System.err.println( e.toString() ); }
         
         /* Return JSON string */
-        
+        System.err.println(results);
         return (results.trim());
         
     }
