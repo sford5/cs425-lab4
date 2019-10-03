@@ -17,6 +17,23 @@ var Lab4 = ( function() {
              */
 
             // INSERT YOUR CODE HERE
+            
+            var user_input = document.getElementById("input").value;
+            var ratedata = rates['rates'];
+            var ratetext = ' ';
+            var datetext = ' ';
+            for (var key in ratedata) {
+                var ratekey = (ratedata[key] * user_input);
+                ratekey = Number.parseFloat(ratekey).toFixed(2);
+                ratetext += key +  ": " + ratekey + '<br>';
+            }
+            datetext += '<br>' + "Based on " + rates['date'] + " Exchange Rates";
+            $('#output').html(ratetext + datetext);
+           
+           
+          
+            
+            
 
         },
         
