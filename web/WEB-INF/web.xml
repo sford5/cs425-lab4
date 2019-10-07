@@ -8,6 +8,19 @@
         <servlet-name>Test</servlet-name>
         <url-pattern>/test</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Latest</servlet-name>
+        <servlet-class>edu.jsu.mcis.cs425.Lab4.Latest</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Latest</servlet-name>
+        <url-pattern>/latest</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
     <session-config>
         <session-timeout>
             30
